@@ -1,0 +1,8 @@
+# npm install -g configurable-http-proxy
+jupyterhub
+jupyter
+oauthenticator
+pandas
+numpy
+matplotlib
+scikit-learn
