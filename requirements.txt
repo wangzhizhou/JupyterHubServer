@@ -6,3 +6,9 @@ pandas
 numpy
 matplotlib
 scikit-learn
+
+# for wechat hack
+wxpy
+jieba
+wordcloud
+matplotlib

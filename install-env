@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
 # -*- coding:utf-8 -*-
 
+#for wechat hack
+sudo apt-get install -y libpng++-dev libfreetype6-dev python3-pil python3-dev
+
 sudo python3 get-pip.py
-sudo apt-get -y install nodejs screen
+sudo apt-get install -y nodejs screen
 sudo npm install -g configurable-http-proxy
 sudo pip3 install -r requirements.txt
 
