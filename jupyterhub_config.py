@@ -751,12 +751,16 @@
 c.JupyterHub.port = 8082
 c.JupyterHub.hub_port = 8081
 
+c.JupyterHub.ssl_key = '/etc/letsencrypt/live/jokerhub.cn/privkey.pem'
+c.JupyterHub.ssl_cert = '/etc/letsencrypt/live/jokerhub.cn/fullchain.pem'
+c.JupyterHub.port = 8082
+
 c.Authenticator.admin_users = {'wangzhizhou'}
 
 # Anyone with a githu account can login my jupyterhub
 from oauthenticator.github import LocalGitHubOAuthenticator
 c.JupyterHub.authenticator_class = LocalGitHubOAuthenticator
 c.LocalGitHubOAuthenticator.create_system_users = True
-c.LocalGitHubOAuthenticator.oauth_callback_url = 'http://jokerhub.cn:8082/hub/oauth_callback'
+c.LocalGitHubOAuthenticator.oauth_callback_url = 'https://jokerhub.cn:8082/hub/oauth_callback'
 c.LocalGitHubOAuthenticator.client_id = 'f71504dff442954c67ef'
 c.LocalGitHubOAuthenticator.client_secret = '9950c5e5d64eda10f3b4418e67c78a96961c6625'
